@@ -1,3 +1,9 @@
 body {
 	padding-top: 50px;
+	max-width: 100%;
+	background-color: gray;
+}
+
+a {
+	display: block;
 }
