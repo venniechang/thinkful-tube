@@ -1,9 +1,72 @@
 body {
-	padding-top: 50px;
+	padding-top: 30px;
 	max-width: 100%;
-	background-color: gray;
+	background-color: rgb(250, 254, 255);
 }
 
 a {
 	display: block;
+}
+
+.app-title {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.description {
+	text-align: center;
+	font-family: 'Robot', sans-serif;
+	padding: 20px;
+}
+
+.js-search-form {
+	text-align: center;
+}
+
+.results {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+.submit {
+	background-color: red; 
+	border-radius: 10px;
+	border-color: solid red;
+	color: white;
+	padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.submit:hover {
+	background-color: white;
+	color: rgb(255, 36, 36);
+
+}
+
+.jquery-text {
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+.results {
+	display: none;
+}
+
+.js-search-results {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.you {
+	color: white;
+	padding: 6px 6px;
+	border-radius: 10px;
+	background-color: red;
 }

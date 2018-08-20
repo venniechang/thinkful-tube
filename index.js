@@ -21,10 +21,15 @@ function getYoutubeData(search, callback) {
 
 function generateHTML(item){
 	console.log(item);
+
+	if (item.snippet.title.length > 27) {
+		shorterTitle = item.snippet.title.substring(0,27)+"...";
+	}
+
 	return (
 		`<a class="js-result-name" href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">
 			<h2>
-				${item.snippet.title}
+				${shorterTitle}
 			</h2>
 			<img src="${item.snippet.thumbnails.medium.url}">
 		</a>`
