@@ -13,7 +13,8 @@ function getYoutubeData(search, callback) {
 	const params = {
 		part: "snippet",
 		key: "AIzaSyBoH3ob0S7PoeyFy_OswhXE4hPMTKrDtA8",
-		q: search
+		q: search,
+		maxResults: 10
 	}
 
 	$.getJSON(url, params, callback)
@@ -22,9 +23,11 @@ function getYoutubeData(search, callback) {
 function generateHTML(item){
 	console.log(item);
 
-	if (item.snippet.title.length > 27) {
-		shorterTitle = item.snippet.title.substring(0,27)+"...";
+	shorterTitle = item.snippet.title;
+	if (item.snippet.title.length > 20) {
+		shorterTitle = item.snippet.title.substring(0,20)+"...";
 	}
+
 
 	return (
 		`<a class="js-result-name" href="https://www.youtube.com/watch?v=${item.id.videoId}" target="_blank">

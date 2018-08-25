@@ -70,3 +70,11 @@ a {
 	border-radius: 10px;
 	background-color: red;
 }
+
+.js-search-results > a {
+
+	
+	padding: 20px;
+
+
+}
